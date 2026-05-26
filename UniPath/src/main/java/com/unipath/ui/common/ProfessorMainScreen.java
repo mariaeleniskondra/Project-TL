@@ -30,13 +30,15 @@ public class ProfessorMainScreen implements Initializable {
     @FXML
     private VBox coursesContainer;
 
-
-    private final ManageProfCourseEdit manageProfCourseEdit = new ManageProfCourseEdit();
-
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         int currentProfessorId = UserSession.getInstance().getUserId();
 
+
+        if (professorNameLabel != null) {
+            professorNameLabel.setText("UniPath - Dashboard Καθηγητή (ID: " + currentProfessorId + ")");
+
+        }
 
         loadNotifications(currentProfessorId);
         loadCourses();
