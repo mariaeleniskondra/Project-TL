@@ -36,7 +36,7 @@ public class ProfessorMainScreen implements Initializable {
 
 
         if (professorNameLabel != null) {
-            professorNameLabel.setText("UniPath - Dashboard Καθηγητή (ID: " + currentProfessorId + ")");
+            professorNameLabel.setText("UniPath - Dashboard Καθηγητή");
 
         }
 
